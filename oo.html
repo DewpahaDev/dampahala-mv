@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>මාර/දම්පහල කණිෂ්ට විද්‍යාලය | Dampahala Kanishta Vidyalaya</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Sinhala:wght@400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --school-blue: #002366;
+            --school-yellow: #FFD700;
+            --text-dark: #333;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Noto Sans Sinhala', sans-serif;
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        /* Header & Nav */
+        header {
+            background-color: var(--school-blue);
+            color: white;
+            padding: 15px 5%;
+            text-align: center;
+            border-bottom: 5px solid var(--school-yellow);
+        }
+
+        .motto {
+            font-size: 14px;
+            font-style: italic;
+            color: var(--school-yellow);
+        }
+
+        nav {
+            background: #f8f9fa;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            z-index: 1000;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: var(--school-blue);
+            font-weight: bold;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        nav a:hover { color: orange; }
+
+        /* Hero Section */
+        .hero {
+            height: 450px;
+            background: linear-gradient(rgba(0,35,102,0.7), rgba(0,35,102,0.7)), url('school_main.jpg'); /* පස්සේ photo එක දාන්න */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        .hero h2 { font-size: 2.5rem; margin: 0; }
+
+        /* News & Administration Section */
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 40px 5%;
+            gap: 20px;
+        }
+
+        .box {
+            flex: 1;
+            min-width: 300px;
+            padding: 20px;
+            border-radius: 10px;
+            background: #fff;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+            border-top: 4px solid var(--school-blue);
+        }
+
+        h3 { color: var(--school-blue); border-bottom: 2px solid var(--school-yellow); padding-bottom: 5px; }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            background: var(--school-blue);
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .btn:hover { background: #001a4d; }
+
+        footer {
+            background: var(--school-blue);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>මාර/දම්පහල කණිෂ්ට විද්‍යාලය</h1>
+    <div class="motto">"විජ්ජා උප්පත්තන් සෙඨ්ඨා"</div>
+</header>
+
+<nav>
+    <a href="#">මුල් පිටුව</a>
+    <a href="#">අපේ ඉතිහාසය</a>
+    <a href="#">පාලන මණ්ඩලය</a>
+    <a href="#">පුවත්</a>
+    <a href="#">ඡායාරූප</a>
+    <a href="#">සම්බන්ධතා</a>
+</nav>
+
+<section class="hero">
+    <h2>අනාගත පරපුර දැනුමෙන් සන්නද්ධ කරන...</h2>
+    <p>දම්පහල කණිෂ්ට විද්‍යාලීය නිල වෙබ් අඩවියට ඔබව සාදරයෙන් පිළිගනිමු!</p>
+</section>
+
+<div class="container">
+    <div class="box">
+        <h3>විදුහල්පතිතුමාගේ පණිවිඩය</h3>
+        <p>අප විද්‍යාලයීය දරුවන්ගේ දක්ෂතා ලෝකයටම විදහා දැක්වීමට ලැබීම ගැන මා නිහතමානීව සතුටු වෙමි...</p>
+        <a href="#" class="btn">වැඩිදුර කියවන්න</a>
+    </div>
+    
+    <div class="box">
+        <h3>අලුත්ම පුවත්</h3>
+        <ul>
+            <li>නිවාසාන්තර ක්‍රීඩා උළෙල ලබන මස පැවැත්වේ.</li>
+            <li>ශිෂ්‍යත්ව ප්‍රතිඵල නිකුත් වේ.</li>
+        </ul>
+        <a href="#" class="btn" style="background:var(--school-yellow); color:black;">සියලු පුවත්</a>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2026 Dampahala Junior Collage. Designed by Dewpahan.Dev</p>
+</footer>
+
+</body>
+</html>
